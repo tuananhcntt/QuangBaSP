@@ -1,0 +1,158 @@
+﻿
+
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+<link href="bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+
+<!--<link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" media="screen" />-->
+<!--<link href="assets/css/responsive.css" rel="stylesheet" />-->
+<style>
+  .dobong{
+-webkit-transform:scale(1); 
+-moz-transform:scale(1); 
+-o-transform:scale(1);
+-webkit-transition-duration: 0.5s;
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+opacity: 1;
+box-shadow:0px 0px 5px gray; 
+/*margin: 0 10px 5px 0;*/
+}
+.rotate360{
+	-webkit-animation: rotate360 2s;
+	-moz-animation: rotate360 2s;
+	-ms-animation: rotate360 2s;
+	-o-animation: rotate360 2s;
+	animation: rotate360 2s;
+}
+.back-to-top {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    opacity: 0.1;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    opacity: 1;
+}
+.khungitem{
+    padding: 4px;
+    background: white;
+}
+.khungtrongitem{
+    margin-left: 1%;
+    margin-bottom: 1%;
+    background: white;
+    width: 100%;
+}
+.khungtrongitem:hover{
+    box-shadow:0px 0px 10px gray; 
+}
+</style>﻿<script type="text/javascript" src="assets/js/jquery-min.js"></script> 
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script> 
+<script type="text/javascript" src="assets/js/selectnav.min.js"></script> <!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Guest</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../Admin/bootstrap/css/bootstrap.min.css"/>
+</head>
+<!--<style>
+            body {
+                font-family: Arial;
+                font-size: 12px;
+                line-height: 13px;
+                /*background: url(assets/css/images/maumoi.png) top fixed;*/
+                background-color: whitesmoke;
+                font-family:Arial;
+                margin:auto;
+            }
+</style>-->
+<body style="background: whitesmoke">
+<form id="form1" method="POST">
+  <div class="center" style="width:100%;margin-bottom:2em; background-color: whitesmoke">
+    <div style="background-image: url(images/bia4.jpg)">
+            
+<nav class="navbar" data-spy="affix" data-offset-top="180">
+<ul class="nav navbar-left navbar-nav nav-tabs">
+      <li class="dropdown">
+    <a style="color:#43B062" href="#" class=" dropdown-toggle" type="button" data-toggle="dropdown"><label>Điện thoại</label>
+    </a>
+    <ul class="dropdown-menu" style="opacity: 0.9;box-shadow:0px 0px 10px white;">
+              <li><a href="Danhmuc.php?DM=nsp11" style="color:#43B062">Apple (iPhone)</a></li>
+            <li><a href="Danhmuc.php?DM=nsp12" style="color:#43B062">Samsung</a></li>
+            <li><a href="Danhmuc.php?DM=nsp13" style="color:#43B062">Oppo</a></li>
+            <li><a href="Danhmuc.php?DM=nsp14" style="color:#43B062">Nokia</a></li>
+            <li><a href="Danhmuc.php?DM=nsp15" style="color:#43B062">Sony</a></li>
+          </ul>
+  </li>
+    <li class="dropdown">
+    <a style="color:#43B062" href="#" class=" dropdown-toggle" type="button" data-toggle="dropdown"><label>Laptop</label>
+    </a>
+    <ul class="dropdown-menu" style="opacity: 0.9;box-shadow:0px 0px 10px white;">
+              <li><a href="Danhmuc.php?DM=nsp21" style="color:#43B062">Apple (Macbook)</a></li>
+            <li><a href="Danhmuc.php?DM=nsp22" style="color:#43B062">Dell</a></li>
+            <li><a href="Danhmuc.php?DM=nsp23" style="color:#43B062">Asus</a></li>
+            <li><a href="Danhmuc.php?DM=nsp24" style="color:#43B062">HP</a></li>
+            <li><a href="Danhmuc.php?DM=nsp25" style="color:#43B062">Acer</a></li>
+          </ul>
+  </li>
+    <li class="dropdown">
+    <a style="color:#43B062" href="#" class=" dropdown-toggle" type="button" data-toggle="dropdown"><label>Tablet</label>
+    </a>
+    <ul class="dropdown-menu" style="opacity: 0.9;box-shadow:0px 0px 10px white;">
+              <li><a href="Danhmuc.php?DM=nsp31" style="color:#43B062">Apple (iPad)</a></li>
+            <li><a href="Danhmuc.php?DM=nsp32" style="color:#43B062">Asus</a></li>
+            <li><a href="Danhmuc.php?DM=nsp33" style="color:#43B062">Masstel</a></li>
+            <li><a href="Danhmuc.php?DM=nsp34" style="color:#43B062">Samsung</a></li>
+            <li><a href="Danhmuc.php?DM=nsp35" style="color:#43B062">Lenovo</a></li>
+          </ul>
+  </li>
+    <li class="dropdown">
+    <a style="color:#43B062" href="#" class=" dropdown-toggle" type="button" data-toggle="dropdown"><label>Máy tính bàn</label>
+    </a>
+    <ul class="dropdown-menu" style="opacity: 0.9;box-shadow:0px 0px 10px white;">
+            </ul>
+  </li>
+    </ul>
+</nav>
+<style>
+.affix {
+      top: 0; left:0;
+      width: 100%;
+      box-shadow:0px 0px 15px gray; 
+      z-index:9999;
+      background-color:white;
+      opacity: 0.9;
+  }
+
+</style>        <div style="float: left"><a href="#"><img src="images/techmart1.png"/></a>
+            
+        </div>
+        <!--search-->
+      
+        ﻿<br /> <br />
+<div class="top_menu" style="margin-bottom:10px;float:left">
+        <ul>
+          <li><a href="Home.php">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+<br />
+    
+   </div>
+        
+
+        <div class="content_area"><br />
+<b>Warning</b>:  require_once(BLL/BLL_Sanpham.php): failed to open stream: No such file or directory in <b>C:\xampp\htdocs\DoAn4\Guest\Danhmuc.php</b> on line <b>3</b><br />
+<br />
+<b>Fatal error</b>:  require_once(): Failed opening required 'BLL/BLL_Sanpham.php' (include_path='C:\xampp\php\PEAR') in <b>C:\xampp\htdocs\DoAn4\Guest\Danhmuc.php</b> on line <b>3</b><br />
